@@ -1,5 +1,5 @@
 # gds-frontend
-Basic sandbox scaffolding of a GDS frontend in Javascript
+Basic sandbox scaffolding of a GDS frontend in Javascript, with next.js
 
 # DHSC
 The Get-Adult-Social Care frontend uses OpenAPI spec for their backend to generate Typescript types for frontend.
