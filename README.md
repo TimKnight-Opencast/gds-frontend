@@ -6,6 +6,7 @@ The Get-Adult-Social Care frontend uses OpenAPI spec for their backend to genera
 They are using a monorepo structure with Backend and Frontend in same repo, but different folders, allowing them to more easily share openAPI spec and build pipelines.
 
 ## Package.json scripts
+
 Some scripts which won't work in this Repo or straight into anything new we produce, as we'll have different Dbs etc, but give an example of how DHSC setup their scripts for running locally and in CI
 ```json
 {
@@ -23,3 +24,8 @@ Some scripts which won't work in this Repo or straight into anything new we prod
   }
 }
 ```
+
+## Directory Structure
+
+`app` - contains all the pages for the front end, folder structure equals url path
+`src` - contains all the shared code for the front end, such as components, utils, styles, etc.
