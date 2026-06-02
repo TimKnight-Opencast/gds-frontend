@@ -16,7 +16,7 @@ export default function Home() {
                         This page has some example content
                     </p>
                     <p className="govuk-body-m">
-                        I'm in medium text
+                        I am in medium text
                     </p>
                     <h2 className="govuk-heading-m govuk-!-margin-top-9">
                         H2 Over here

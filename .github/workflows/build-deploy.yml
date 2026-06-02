@@ -1,0 +1,55 @@
+name: Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target environment'
+        required: true
+        default: 'dev'
+        type: choice
+        options: [dev, tst, prd]
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  NODE_VERSION: "26"
+
+jobs:
+  # =============================================================================
+  # Build and Test Client (React/next) - Validation only, no image
+  # =============================================================================
+  build-client:
+    name: Build & Test Client
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "npm"
+          cache-dependency-path: ./package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: .
+
+      - name: Run linting
+        run: npm run lint --if-present
+        working-directory: .
+
+      - name: Build Client (validation only)
+        run: npm run build
+        working-directory: .

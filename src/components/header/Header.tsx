@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 
 type Props = {
-  // session?: Session | null;
+  session?: any | null;
   account_url?: string;
 };
 
@@ -139,11 +139,11 @@ const Header: React.FC<Props> = ({ session, account_url }) => {
                     </a>
                   </li>
                 )}
-                {session && (
-                  <li className="rebranded-one-login-header__nav__list-item">
-                    <LogoutButton session={session} />
-                  </li>
-                )}
+                {/*{session && (*/}
+                {/*  <li className="rebranded-one-login-header__nav__list-item">*/}
+                {/*    <LogoutButton session={session} />*/}
+                {/*  </li>*/}
+                {/*)}*/}
               </ul>
             </nav>
           </div>

@@ -9,7 +9,7 @@ const PhaseBanner: React.FC = () => {
                     Prototype
                 </strong>
                 <span className="govuk-phase-banner__text">
-        This isn't a real service – it is an example.
+        This is not a real service – it is an example.
       </span>
             </p>
         </div>
