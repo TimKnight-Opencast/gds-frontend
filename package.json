@@ -1,6 +1,6 @@
 {
-  "name": "dhsc-gds-frontend",
-  "description": "GDS implementation in next.js",
+  "name": "gds-nextjs-frontend",
+  "description": "GDS implementation in next.js with react components",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -37,10 +37,7 @@
     "@testing-library/react": "^16.1.0",
     "@testing-library/user-event": "^14.6.1",
     "@types/govuk-frontend": "^5.11.0",
-    "@types/js-cookie": "^3.0.6",
-    "@types/mssql": "^9.1.6",
     "@types/node": "^24.1.0",
-    "@types/plotly.js": "^3.0.8",
     "@types/react": "19.1.12",
     "@types/react-dom": "19.1.9",
     "@types/react-plotly.js": "^2.6.4",
@@ -48,8 +45,6 @@
     "@typescript-eslint/parser": "^8.18.0",
     "@vitejs/plugin-react": "^5.1.2",
     "@vitest/coverage-v8": "^4.0.16",
-    "axe-html-reporter": "^2.2.11",
-    "csv-parse": "^6.1.0",
     "dotenv": "^16.4.7",
     "eslint": "^9.23.0",
     "eslint-plugin-react": "^7.37.2",
@@ -73,7 +68,6 @@
   "overrides": {
     "@types/react": "19.1.12",
     "@types/react-dom": "19.1.9",
-    "lodash": "4.17.23",
-    "fast-xml-parser": "^5.3.8"
+    "lodash": "4.17.23"
   }
 }
