@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
-import Footer from '../footer/Footer';
 import PhaseBanner from '../phase-banner/PhaseBanner';
+
 
 type Props = {
   title: string;
@@ -12,7 +12,8 @@ type Props = {
   showNavBar?: boolean;
 };
 
-const Layout: React.FC<Props> = ({
+// @ts-ignore
+export default function Layout({
   title,
   children,
   showLoginInformation,
@@ -20,7 +21,7 @@ const Layout: React.FC<Props> = ({
   showNavBar = false,
   currentPage,
   backURL,
-}) => {
+}: Props) {
   const title_suffix = 'Example GDS service - GOV.UK';
   const full_title = title + ' - ' + title_suffix;
 
@@ -62,9 +63,6 @@ const Layout: React.FC<Props> = ({
           {children}
         </main>
       </div>
-      <Footer />
     </>
   );
 };
-
-export default Layout;

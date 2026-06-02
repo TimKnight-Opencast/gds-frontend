@@ -19,12 +19,15 @@
     "**/*.{js,jsx,ts,tsx,json,css,md}": "prettier --write"
   },
   "dependencies": {
+    "@emotion/is-prop-valid": "^1.4.0",
     "@govuk-one-login/service-header": "^6.0.0",
     "@next/eslint-plugin-next": "15.5.2",
     "govuk-frontend": "^6.1.0",
+    "govuk-react": "^0.10.7",
     "next": "^15.5.14",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "styled-components": "^6.4.2"
   },
   "devDependencies": {
     "@axe-core/react": "^4.10.1",
