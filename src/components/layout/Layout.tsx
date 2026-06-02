@@ -34,7 +34,7 @@ export default function Layout({
     <>
       <title>{full_title}</title>
 
-      {/*{currentPage !== 'home' && (*/}
+      {currentPage !== 'home' && (
         <div
           className="phasebanner-tmp-bg"
           style={currentPage === 'home' ? { backgroundColor: '#d2e2f1' } : {}}
@@ -43,7 +43,7 @@ export default function Layout({
             <PhaseBanner />
           </div>
         </div>
-      {/*)}*/}
+      )}
       <div className="govuk-width-container">
         {backURL && (
           <div className="backlink-wrapper">
