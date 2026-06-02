@@ -34,6 +34,7 @@ export default function RootLayout({
         <body className="govuk-template__body app-body-class js-enabled govuk-frontend-supported">
         <Header account_url={ONELOGIN_HOME_URL}/>
         {children}
+
         <Footer />
         </body>
         </html>
